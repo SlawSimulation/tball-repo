@@ -10,28 +10,40 @@
     <h1>Tekken Ball Mode Archive</h1>
     <nav>
       <a href="#tekken3">Tekken 3</a>
-      <a href="#ttt2">TTT2</a> <!-- Fixed link -->
+      <a href="#ttt2">TTT2</a>
       <a href="#tekken8">Tekken 8</a>
     </nav>
   </header>
 
-  <!-- Tekken 3 Section -->
-  <section id="tekken3">
-    <h2>Tekken 3 Ball Mode</h2>
-    <div id="tekken3-characters" class="character-container"></div>
+  <section id="filters" style="padding: 2rem;">
+    <input type="text" id="search-input" placeholder="Search character..." />
+    <select id="game-filter">
+      <option value="all">All Games</option>
+      <option value="tekken3">Tekken 3</option>
+      <option value="ttt2">TTT2</option>
+      <option value="tekken8">Tekken 8</option>
+    </select>
   </section>
 
-  <!-- TTT2 Section -->
-  <section id="ttt2">
-    <h2>Tekken Tag Tournament 2 Ball</h2>
-    <div id="ttt2-characters" class="character-container"></div>
-  </section>
+  <main>
+    <!-- Tekken 3 Section -->
+    <section id="tekken3">
+      <h2>Tekken 3 Ball Mode</h2>
+      <div id="tekken3-characters" class="character-container"></div>
+    </section>
 
-  <!-- Tekken 8 Section -->
-  <section id="tekken8">
-    <h2>Tekken 8 Ball Mode</h2>
-    <div id="tekken8-characters" class="character-container"></div>
-  </section>
+    <!-- TTT2 Section -->
+    <section id="ttt2">
+      <h2>Tekken Tag Tournament 2 Ball</h2>
+      <div id="ttt2-characters" class="character-container"></div>
+    </section>
+
+    <!-- Tekken 8 Section -->
+    <section id="tekken8">
+      <h2>Tekken 8 Ball Mode</h2>
+      <div id="tekken8-characters" class="character-container"></div>
+    </section>
+  </main>
 
   <!-- Load JS -->
   <script src="script.js"></script>

@@ -73,3 +73,43 @@ footer {
   background: #111;
   border-top: 1px solid #333;
 }
+
+.hidden {
+  display: none;
+}
+
+.toggle-btn {
+  margin: 0.5rem 0;
+  background-color: #0af;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.toggle-btn:hover {
+  background-color: #08c;
+}
+
+.character-details {
+  margin-top: 0.5rem;
+}
+
+#filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#search-input,
+#game-filter {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #fff;
+}
