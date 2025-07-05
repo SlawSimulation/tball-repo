@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Steve Fox",
+    "style": "Boxing",
+    "main_move": "Phoenix Smasher",
+    "frame_data": "+4 on block",
+    "artwork": "images/ttt2-artwork/steve.png"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Heihachi",
+    "style": "Mishima",
+    "main_move": "EWGF",
+    "frame_data": "+5 on block, launcher",
+    "artwork": "images/t3-artwork/heihachi.png"
+  },
+  {
+    "name": "Jin Kazama",
+    "style": "Mishima",
+    "main_move": "Electric Wind Hook Fist",
+    "frame_data": "+3 on block",
+    "artwork": "images/t3-artwork/jin.png"
+  }
+]
