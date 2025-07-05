@@ -65,8 +65,56 @@ function renderCharacters() {
   });
 }
 
+function setupBackgroundControls() {
+  const bgSelect = document.getElementById('background-select');
+  const colorInput = document.getElementById('background-color');
+
+  bgSelect.addEventListener('change', () => {
+    const val = bgSelect.value;
+
+    if (val === 'default') {
+      colorInput.style.display = 'none';
+      document.body.style.background = '#f0f2f5'; // default background color
+      document.body.style.backgroundImage = '';
+      document.body.style.backgroundSize = '';
+      document.body.style.backgroundRepeat = '';
+      document.body.style.backgroundPosition = '';
+    } else if (val === 'colorpicker') {
+      colorInput.style.display = 'inline-block';
+      document.body.style.backgroundImage = '';
+      document.body.style.backgroundSize = '';
+      document.body.style.backgroundRepeat = '';
+      document.body.style.backgroundPosition = '';
+      document.body.style.background = colorInput.value;
+    } else if (val.startsWith('art')) {
+      colorInput.style.display = 'none';
+      let imageUrl = '';
+      if (val === 'art1') {
+        imageUrl = 'url("path/to/art1.jpg")'; // Replace with your image path
+      } else if (val === 'art2') {
+        imageUrl = 'url("path/to/art2.jpg")'; // Replace with your image path
+      }
+      document.body.style.background = '';
+      document.body.style.backgroundImage = imageUrl;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundPosition = 'center center';
+    }
+  });
+
+  colorInput.addEventListener('input', () => {
+    if (bgSelect.value === 'colorpicker') {
+      document.body.style.background = colorInput.value;
+    }
+  });
+}
+
 window.onload = () => {
   loadCharacters();
+  renderCharacters();
+
   document.getElementById('search-input').addEventListener('input', renderCharacters);
   document.getElementById('game-filter').addEventListener('change', renderCharacters);
+
+  setupBackgroundControls();
 };
