@@ -74,7 +74,7 @@ function setupBackgroundControls() {
 
     if (val === 'default') {
       colorInput.style.display = 'none';
-      document.body.style.background = '#f0f2f5'; // default background color
+      document.body.style.background = '#000000'; // default background color
       document.body.style.backgroundImage = '';
       document.body.style.backgroundSize = '';
       document.body.style.backgroundRepeat = '';
@@ -90,9 +90,9 @@ function setupBackgroundControls() {
       colorInput.style.display = 'none';
       let imageUrl = '';
       if (val === 'art1') {
-        imageUrl = 'url("path/to/art1.jpg")'; // Replace with your image path
+        imageUrl = 'url("backgrounds/bg_brick.jpg")'; // Replace with your image path
       } else if (val === 'art2') {
-        imageUrl = 'url("path/to/art2.jpg")'; // Replace with your image path
+        imageUrl = 'url("backgrounds/bg_brick.jpg")'; // Replace with your image path
       }
       document.body.style.background = '';
       document.body.style.backgroundImage = imageUrl;
