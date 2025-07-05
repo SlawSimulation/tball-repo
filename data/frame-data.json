@@ -1,50 +1,36 @@
 {
   "tekken3": [
     {
-      "name": "Gon",
-      "style": "Unique",
-      "main_move": "Fireball",
-      "frame_data": "+8 on hit, -12 on block",
-      "artwork": "images/t3-artwork/gon.jpg"
-    },
-    {
       "name": "Heihachi",
       "style": "Mishima",
       "main_move": "EWGF",
       "frame_data": "+5 on block, launcher",
-      "artwork": "images/t3-artwork/heihachi.jpg"
+      "artwork": "images/t3-artwork/heihachi.png"
+    },
+    {
+      "name": "Jin Kazama",
+      "style": "Mishima",
+      "main_move": "Electric Wind Hook Fist",
+      "frame_data": "+3 on block",
+      "artwork": "images/t3-artwork/jin.png"
     }
   ],
   "ttt2": [
     {
-      "name": "Kazuya",
-      "style": "Mishima",
-      "main_move": "Hell Sweep",
-      "frame_data": "Knockdown on hit, unsafe on block",
-      "artwork": "images/ttt2-artwork/kazuya.jpg"
-    },
-    {
-      "name": "Jinpachi",
-      "style": "Ancient Power",
-      "main_move": "Chest Beam",
-      "frame_data": "Launcher, -10 on block",
-      "artwork": "images/ttt2-artwork/jinpachi.jpg"
+      "name": "Steve Fox",
+      "style": "Boxing",
+      "main_move": "Phoenix Smasher",
+      "frame_data": "+4 on block",
+      "artwork": "images/ttt2-artwork/steve.png"
     }
   ],
   "tekken8": [
     {
-      "name": "Reina",
-      "style": "Hybrid Mishima",
-      "main_move": "Violet Step",
-      "frame_data": "+6 on hit, evasive",
-      "artwork": "images/t8-artwork/reina.jpg"
-    },
-    {
-      "name": "Lars",
-      "style": "Electrofusion",
-      "main_move": "Silent Entry 2",
-      "frame_data": "+4 on block, mid",
-      "artwork": "images/t8-artwork/lars.jpg"
+      "name": "Leroy Smith",
+      "style": "Kenpo",
+      "main_move": "Dragon Tail",
+      "frame_data": "+6 on block",
+      "artwork": "images/t8-artwork/leroy.png"
     }
   ]
 }
