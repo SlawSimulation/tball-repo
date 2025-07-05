@@ -4,10 +4,11 @@
 /* Global styles */
 body {
   font-family: 'Inter', sans-serif;
-  background: #f0f2f5;
+  background-color: #000000; /* fallback default */
   color: #333;
   margin: 0;
   padding: 20px;
+
 }
 
 /* Containers for characters in each game section */
