@@ -6,7 +6,7 @@ let allCharacters = {
 
 async function loadCharacters() {
   try {
-    // Load each JSON separately
+    // Load each JSON separately in parallel
     const [tekken3Res, ttt2Res, tekken8Res] = await Promise.all([
       fetch('data/framedata-tekken3.json'),
       fetch('data/framedata-tekkentag2.json'),
@@ -54,7 +54,7 @@ function renderCharacters() {
     });
   });
 
-  // Toggle detail buttons
+  // Attach toggle button events
   document.querySelectorAll('.toggle-btn').forEach(btn => {
     btn.onclick = () => {
       const targetId = btn.getAttribute('data-target');
