@@ -1,5 +1,5 @@
-/* Container holds all entries in a flexible grid */
-#entries-container {
+/* Containers for characters in each game section */
+.character-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -7,8 +7,8 @@
   justify-content: center;
 }
 
-/* Each entry box */
-.entry {
+/* Individual character card */
+.character-card {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -17,26 +17,59 @@
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  text-align: center;
 }
 
-/* Slight scale up on hover */
-.entry:hover {
+/* Hover effect on character card */
+.character-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Player name style */
-.entry h2 {
+/* Character name */
+.character-card h3 {
   margin: 0 0 10px 0;
   font-size: 1.3em;
   color: #333;
-  text-align: center;
 }
 
-/* Player description style */
-.entry p {
-  margin: 0;
-  font-size: 1em;
-  color: #666;
-  text-align: center;
+/* Character image */
+.character-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Character details (hidden by default) */
+.character-details {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #444;
+  text-align: left;
+}
+
+/* Hide details when toggled */
+.hidden {
+  display: none;
+}
+
+/* Toggle button */
+.toggle-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
 }
